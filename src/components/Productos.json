@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "Vino tinto Alma Mora",
+    "precio": 2000,
+    "imagen": "./components/pictures/almamoratinto.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Vino Rosado Alma Mora",
+    "precio": 1500,
+    "imagen": "ruta/imagen/vino-tinto.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cerveza IPA Imperial",
+    "precio": 500,
+    "imagen": "ruta/imagen/cerveza-ipa.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Patagonia",
+    "precio": 700,
+    "imagen": "ruta/imagen/espumante-brut.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Champagne Cruzat Cuvee Rose",
+    "precio": 4300,
+    "imagen": "ruta/imagen/whisky-escoces.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Champagne Baron B Extra Brut",
+    "precio": 5000,
+    "imagen": "ruta/imagen/ron-anejo.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Whisky Buchanans Deluxe 12 Años",
+    "precio": 12600,
+    "imagen": "ruta/imagen/gin-premium.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Whisky Johnnie Walker Blue Label",
+    "precio": 103000,
+    "imagen": "ruta/imagen/aperitivo-vermut.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Ron Santa Teresa Gran Reserva",
+    "precio": 9500,
+    "imagen": "ruta/imagen/vodka.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Flor De Caña Gran Reserva 7 Años",
+    "precio": 11000,
+    "imagen": "ruta/imagen/comestible-gourmet.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Gin Bombay Sapphire London",
+    "precio": 8900,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Gin Aconcagua",
+    "precio": 4300,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Aperitivo Campari",
+    "precio": 1700,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Aperitivo Aperol",
+    "precio": 1800,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Absolut Vodka",
+    "precio": 5150,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Vodka Skyy",
+    "precio": 2050,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Papas fritas Pringles",
+    "precio": 1200,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Bombón Ferrero Rocher",
+    "precio": 3400,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Coca-Cola",
+    "precio": 700,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Paso De Los Toros",
+    "precio": 500,
+    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+  }
+]
