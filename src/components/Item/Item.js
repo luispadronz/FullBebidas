@@ -23,7 +23,7 @@ const Item = ({ info }) => {
                 <Card.Text>{info.precio}</Card.Text>
                 <Button variant="dark">
                   {" "}
-                  <Link to={`detalle/${info.id}`}>Ver Detalles</Link>
+                  <Link to={`/detalle/${info.id}`}>Ver Detalles</Link>
                 </Button>
               </Card.Body>
             </Card>
