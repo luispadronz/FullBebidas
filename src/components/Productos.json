@@ -1,122 +1,162 @@
 [
   {
     "id": 1,
-    "nombre": "Vino tinto Alma Mora",
-    "precio": 2000,
-    "imagen": "./components/pictures/almamoratinto.jpg"
+    "nombre": "Vino Alma Mora",
+    "precio": "2000$",
+    "imagen": "/pictures/almamoratinto.png",
+    "description": "Vino de color rojo intenso. Aromas a frutas maduras, frambuesas, ciruelas y un toque de vainilla.",
+    "categoria": "vino"
   },
   {
     "id": 2,
     "nombre": "Vino Rosado Alma Mora",
-    "precio": 1500,
-    "imagen": "ruta/imagen/vino-tinto.jpg"
+    "precio": "1500$",
+    "imagen": "/pictures/almamorarosa.jpg",
+    "description": "Vino de color rosado, con aromas florales",
+    "categoria": "vino"
   },
   {
     "id": 3,
     "nombre": "Cerveza IPA Imperial",
-    "precio": 500,
-    "imagen": "ruta/imagen/cerveza-ipa.jpg"
+    "precio": "500$",
+    "imagen": "/pictures/cervezaipa.png",
+    "description": "El aroma y el sabor son claramente marcados por el lúpulo",
+    "categoria": "cerveza"
   },
   {
     "id": 4,
     "nombre": "Patagonia",
-    "precio": 700,
-    "imagen": "ruta/imagen/espumante-brut.jpg"
+    "precio": "700$",
+    "imagen": "/pictures/cervezapatagonia.jpg",
+    "description": "Se trata de una cerveza destinada al mercado gourmet",
+    "categoria": "cerveza"
   },
   {
     "id": 5,
     "nombre": "Champagne Cruzat Cuvee Rose",
-    "precio": 4300,
-    "imagen": "ruta/imagen/whisky-escoces.jpg"
+    "precio": "4300$",
+    "imagen": "/pictures/foto5.png",
+    "description": "Champagne Cruzat Cuvée Rosé Extra Brut 750 Ml",
+    "categoria": "espumante"
   },
   {
     "id": 6,
     "nombre": "Champagne Baron B Extra Brut",
-    "precio": 5000,
-    "imagen": "ruta/imagen/ron-anejo.jpg"
+    "precio": "5000$",
+    "imagen": "/pictures/baronb.jpeg",
+    "description": "Baron B es un espumante inédito, de partidas limitadas, que permite disfrutar de una nueva dimensión de elegancia y sofisticación.",
+    "categoria": "espumante"
   },
   {
     "id": 7,
     "nombre": "Whisky Buchanans Deluxe 12 Años",
-    "precio": 12600,
-    "imagen": "ruta/imagen/gin-premium.jpg"
+    "precio": "12600$",
+    "imagen": "/pictures/buchanans.jpg",
+    "description": "Su sabor suave y afrutado, con notas de naranja y chocolate permiten servirlo en las rocas o con soda, acompañado de una rodaja de naranja.",
+    "categoria": "whisky"
   },
   {
     "id": 8,
     "nombre": "Whisky Johnnie Walker Blue Label",
-    "precio": 103000,
-    "imagen": "ruta/imagen/aperitivo-vermut.jpg"
+    "precio": "103000$",
+    "imagen": "/pictures/Blue-Label.jpg",
+    "description": "Es una mezcla exquisita hecha con algunos de los whiskies más raros y excepcionales de Escocia.",
+    "categoria": "whisky"
   },
   {
     "id": 9,
     "nombre": "Ron Santa Teresa Gran Reserva",
-    "precio": 9500,
-    "imagen": "ruta/imagen/vodka.jpg"
+    "precio": "9500$",
+    "imagen": "/pictures/santateresa.png",
+    "description": "Es un ron anejo mezcla de rones ligeros y pesados envejecidos por hasta 5 anos en barriles y toneles de Roble Blanco Americano.",
+    "categoria": "ron"
   },
   {
     "id": 10,
     "nombre": "Flor De Caña Gran Reserva 7 Años",
-    "precio": 11000,
-    "imagen": "ruta/imagen/comestible-gourmet.jpg"
+    "precio": "11000$",
+    "imagen": "/pictures/flordecaña.webp",
+    "description": "Un ron súper premium, de cuerpo entero añejado por 7 años, que se caracteriza por su rico color caoba, su sabor suave, agradable al paladar. Tiene una relación calidad-precio excepcional.",
+    "categoria": "ron"
   },
   {
     "id": 11,
     "nombre": "Gin Bombay Sapphire London",
-    "precio": 8900,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "8900$",
+    "imagen": "/pictures/bombay.jpg",
+    "description": "Bombay Sapphire es una ginebra inglesa premium de la más alta calidad,",
+    "categoria": "gin"
   },
   {
     "id": 12,
     "nombre": "Gin Aconcagua",
-    "precio": 4300,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "4300$",
+    "imagen": "/pictures/Gin-Acon.jpg",
+    "description": "Es una ginebra premium, elaborada con los mejores ingredientes y siguiendo un proceso de destilación artesanal",
+    "categoria": "gin"
   },
   {
     "id": 13,
     "nombre": "Aperitivo Campari",
-    "precio": 1700,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "1700$",
+    "imagen": "/pictures/campari.png",
+    "description": "Es una bebida alcohólica espirituosa obtenida de la infusión de hierbas amargas, plantas aromáticas y frutas en alcohol y agua.",
+    "categoria": "aperitivo"
   },
   {
     "id": 14,
     "nombre": "Aperitivo Aperol",
-    "precio": 1800,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "1800$",
+    "imagen": "/pictures/Aperol.png",
+    "description": "El Aperol es una bebida alcohólica de origen italiano de baja graduación alcohólica, sus ingredientes incluyen naranja amarga, ruibarbo, gentiana, cinchona, entre otros.",
+    "categoria": "aperitivo"
   },
   {
     "id": 15,
     "nombre": "Absolut Vodka",
-    "precio": 5150,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "5150$",
+    "imagen": "/pictures/ABSOLUT.jpg",
+    "description": "Absolut Vodka es una marca de vodka de origen sueco",
+    "categoria": "vodka"
   },
   {
     "id": 16,
     "nombre": "Vodka Skyy",
-    "precio": 2050,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "2050$",
+    "imagen": "/pictures/skyy.jpg",
+    "description": "Es de origen estadounidense y tiene pureza de calidad garantizada por su proceso de elaboración.",
+    "categoria": "vodka"
   },
   {
     "id": 17,
     "nombre": "Papas fritas Pringles",
-    "precio": 1200,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "1200$",
+    "imagen": "/pictures/pringles.jpg",
+    "description": "Se compone de patata deshidratada, almidón de trigo y harinas.",
+    "categoria": "snack"
   },
   {
     "id": 18,
     "nombre": "Bombón Ferrero Rocher",
-    "precio": 3400,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "3400$",
+    "imagen": "/pictures/Bombo.jpg",
+    "description": " Están formados por una capa de barquillo rellena con pasta de cacao y avellanas, cubierta por una capa de chocolate con avellanas trituradas y una avellana entera en el interior.",
+    "categoria": "snack"
   },
   {
     "id": 19,
     "nombre": "Coca-Cola",
-    "precio": 700,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "700$",
+    "imagen": "/pictures/coca-cola-2-litros.png",
+    "description": "Es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras.",
+    "categoria": "gaseosa"
   },
   {
     "id": 20,
     "nombre": "Paso De Los Toros",
-    "precio": 500,
-    "imagen": "ruta/imagen/bebida-sin-alcohol.jpg"
+    "precio": "500$",
+    "imagen": "/pictures/toroo.png",
+    "description": "Es una línea de gaseosas o bebidas carbonatadas, especialmente de agua tónica, de origen uruguayo.",
+    "categoria": "gaseosa"
   }
 ]
