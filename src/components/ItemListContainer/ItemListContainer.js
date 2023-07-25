@@ -23,13 +23,8 @@ export const ItemListContainer = ({}) => {
     }
   }, [categoriaId]);
 
-  const onAdd = (cantidad) => {
-    console.log(`Compraste ${cantidad} unidades`);
-  };
-
   return (
     <div>
-      <ItemCount initial={1} stock={100} onAdd={onAdd} />
       <ItemList data={data} />
     </div>
   );

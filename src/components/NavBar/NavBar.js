@@ -12,7 +12,7 @@ function ColorSchemesExample() {
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <img src="companybar.jpg" width="100" />
-          <Navbar.Brand href="#home">¡Company Bar!</Navbar.Brand>
+          <Navbar.Brand href="/">¡Company Bar!</Navbar.Brand>
           <Nav className="me-auto">
             <NavLink>
               {" "}
@@ -74,10 +74,10 @@ function ColorSchemesExample() {
                 </NavLinkReact>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#deets">
+            <NavLinkReact to="/cart">
               {" "}
               <CartWidget />
-            </Nav.Link>
+            </NavLinkReact>
           </Nav>
         </Container>
       </Navbar>
