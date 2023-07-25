@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { Link } from "react-router-dom";
 
 const Item = ({ info }) => {
   return (
@@ -20,7 +21,10 @@ const Item = ({ info }) => {
                 <Card.Title>{info.nombre}</Card.Title>
                 <Card.Text>{info.description}</Card.Text>
                 <Card.Text>{info.precio}</Card.Text>
-                <Button variant="dark">Ver detalles</Button>
+                <Button variant="dark">
+                  {" "}
+                  <Link to={`detalle/${info.id}`}>Ver Detalles</Link>
+                </Button>
               </Card.Body>
             </Card>
           </Col>
