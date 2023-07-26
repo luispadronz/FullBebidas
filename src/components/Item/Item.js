@@ -16,7 +16,7 @@ const Item = ({ info }) => {
           <Col>
             {" "}
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={info.imagen} />
+              <Card.Img variant="top" className="" src={info.imagen} />
               <Card.Body>
                 <Card.Title>{info.nombre}</Card.Title>
                 <Card.Text>{info.description}</Card.Text>
