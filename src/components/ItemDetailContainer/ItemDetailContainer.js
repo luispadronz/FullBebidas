@@ -12,7 +12,7 @@ export const ItemDetailContainer = () => {
     const getBebidas = new Promise((resolve) => {
       setTimeout(() => {
         resolve(Bebidas);
-      }, 1000);
+      }, 300);
     });
     getBebidas.then((res) =>
       setBebidas(res.find((bebida) => bebida.id === parseInt(detalleId)))

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 const ItemDetail = ({ bebidas }) => {
+  const [goToCart, setGoToCart] = useState(false);
+
   const onAdd = (cantidad) => {
-    console.log(`Compraste ${cantidad} unidades`);
+    setGoToCart(true);
   };
   return (
     <div className="item-detail">
@@ -16,7 +20,14 @@ const ItemDetail = ({ bebidas }) => {
         <h1 className="item-title">{bebidas.nombre}</h1>
         <p className="item-description">{bebidas.description}</p>
         <h2 className="item-price">{bebidas.precio}</h2>
-        <ItemCount initial={1} stock={100} onAdd={onAdd} />;
+        {goToCart ? (
+          <Link to="/Cart">
+            {" "}
+            <Button variant="outline-success">Terminar Compra</Button>
+          </Link>
+        ) : (
+          <ItemCount initial={1} stock={100} onAdd={onAdd} />
+        )}
       </div>
     </div>
   );

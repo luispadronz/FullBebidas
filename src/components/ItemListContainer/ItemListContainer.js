@@ -12,7 +12,7 @@ export const ItemListContainer = ({}) => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(Bebidas);
-      }, 1000);
+      }, 300);
     });
     if (categoriaId) {
       getData.then((res) =>
