@@ -3,12 +3,15 @@ import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import { useCartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ bebidas }) => {
   const [goToCart, setGoToCart] = useState(false);
+  const { addProduct } = useCartContext();
 
   const onAdd = (cantidad) => {
     setGoToCart(true);
+    addProduct(bebidas, cantidad);
   };
   return (
     <div className="item-detail">
