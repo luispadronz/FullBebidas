@@ -14,18 +14,33 @@ const CartProvider = ({ children }) => {
   const removeProduct = (id) =>
     setCart(cart.filter((product) => product.id !== id));
 
-  const addProduct = (item, quantity) => {
-    let newCart;
-    let product = cart.find((product) => product.id === item.id);
-    if (product) {
-      product.quantity += quantity;
-      newCart = [...cart];
-    } else {
-      product = { ...item, quantity: quantity };
-      newCart = [...cart, product];
-    }
-    setCart(newCart);
+  const totalPrice = () => {
+    return cart.reduce(
+      (acumulador1, act) => acumulador1 + act.quantity * act.price,
+      0
+    );
   };
+
+  const totalProducts = () => {
+    return cart.reduce(
+      (acumulador2, productoActual) => acumulador2 + productoActual.quantity,
+      0
+    );
+  };
+
+  const addProduct = (item, quantity) => {
+    const productIndex = cart.findIndex((product) => product.id === item.id);
+
+    if (productIndex !== -1) {
+      const newCart = [...cart];
+      newCart[productIndex].quantity += quantity;
+      setCart(newCart);
+    } else {
+      const product = { ...item, quantity: quantity };
+      setCart((prevCart) => [...prevCart, product]);
+    }
+  };
+
   console.log("carrito", cart);
 
   return (
@@ -35,6 +50,9 @@ const CartProvider = ({ children }) => {
         isInCart,
         removeProduct,
         addProduct,
+        totalPrice,
+        totalProducts,
+        cart,
       }}
     >
       {children}
