@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Proyecto de Ecommerce de Bebidas Alcohólicas en React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es mi primer proyecto de ecommerce desarrollado en React JS. El proyecto se centra en la venta de bebidas alcohólicas y no alcohólicas. Utilicé la librería Bootstrap para el diseño de la interfaz de usuario.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Catálogo de 20 bebidas, incluyendo 18 con alcohol 🍹 y 2 sin alcohol 🥤.
+- Uso de Bootstrap para el diseño y la navegación de la interfaz.
+- Banner en la página principal con una imagen descargada.
+- Listado de productos con imágenes, precios, nombres y descripciones.
+- Categorización de productos visible en la NavBar.
+- Uso de Firestore para almacenar y recuperar datos de productos.
 
-### `npm start`
+## Componentes Principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **CartContext**: Proporciona funciones para gestionar el carrito de compras, como agregar, quitar y vaciar artículos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **ItemDetailContainer**: Lógica para mostrar los detalles de un producto específico obtenido desde Firebase.
 
-### `npm test`
+- **ItemDetail**: Componente de presentación para mostrar los detalles de un producto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ItemListContainer**: Lógica para mostrar el listado completo de productos obtenidos desde Firebase.
 
-### `npm run build`
+- **ItemList**: Componente de presentación que muestra la lista de productos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **ItemCart**: Muestra el contenido del carrito de compras, con funciones para quitar y sumar productos. 🛒
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **ItemCount**: Componente contador para ajustar la cantidad de productos en el carrito.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Item**: Renderiza los productos dentro del carrito de compras. 💰
 
-### `npm run eject`
+## Configuración
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+El proyecto utiliza Firebase para la gestión de datos. Se ha configurado el acceso a Firestore para obtener y mostrar información sobre los productos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estilos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Se han aplicado estilos descargados de Bootstrap para lograr un diseño atractivo y responsivo en todo el sitio web.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Navegación
 
-## Learn More
+Se han utilizado las BrowserRoutes para permitir la navegación entre las distintas secciones de la aplicación.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Este proyecto ha sido una emocionante introducción a React JS y el desarrollo de aplicaciones web! Si tienes preguntas o necesitas más información, no dudes en contactarme via mail luispadron.201@gmail.com

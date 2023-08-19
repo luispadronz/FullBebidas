@@ -16,7 +16,7 @@ const CartProvider = ({ children }) => {
 
   const totalPrice = () => {
     return cart.reduce(
-      (acumulador1, act) => acumulador1 + act.quantity * act.price,
+      (acumulador1, act) => acumulador1 + act.quantity * act.precio,
       0
     );
   };

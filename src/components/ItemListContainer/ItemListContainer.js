@@ -1,25 +1,42 @@
 import React, { useState, useEffect } from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import Bebidas from "../Productos.json";
 import ItemList from "../ItemList/ItemList";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "firebase/firestore";
 
 export const ItemListContainer = ({}) => {
   const [data, setData] = useState([]);
+
   const { categoriaId } = useParams();
+
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(Bebidas);
-      }, 300);
-    });
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, "Productos");
+
     if (categoriaId) {
-      getData.then((res) =>
-        setData(res.filter((bebida) => bebida.categoria === categoriaId))
+      const queryFilter = query(
+        queryCollection,
+        where("categoria", "==", categoriaId)
+      );
+
+      getDocs(queryFilter).then((res) =>
+        setData(
+          res.docs.map((producto) => ({ id: producto.id, ...producto.data() }))
+        )
       );
     } else {
-      getData.then((res) => setData(res));
+      getDocs(queryCollection).then((res) =>
+        setData(
+          res.docs.map((producto) => ({ id: producto.id, ...producto.data() }))
+        )
+      );
     }
   }, [categoriaId]);
 
